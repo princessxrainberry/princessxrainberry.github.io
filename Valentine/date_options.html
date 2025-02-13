@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Day Menu</title>
+    <link rel="stylesheet" href="date_style.css">
+</head>
+<body>
+    <form id="interactiveForm" action="mailto:kashishgidwani9@gmail.com" method="post" enctype="text/plain">
+        <h1> ❤️ Valentine's Day Special Menu ❤️ </h1>
+        <ul class="menu-container">
+            <!-- Snacks Dropdown -->
+            <li class="menu">
+                <h2 class="menu-title"> SNACKS </h2>
+                <ul class="menu-dropdown">
+                    <li><label><input type="radio" name="snacks" value="springpotato"><img src="images/springpotato.jpeg" alt="Spring Potato"> Spring Potato </label></li>
+                    <li><label><input type="radio" name="snacks" value="kurkure"><img src="images/kurkure.jpeg" alt="Kurkure"> Chilli Chatka Kurkure </label></li>
+                    <li><label><input type="radio" name="snacks" value="spread"><img src="images/spread.jpeg" alt="Cheese Spread"> Chillie Cheese Spread with Bread</label></li>
+                </ul>
+            </li>
+
+            <!-- Main Dish Dropdown -->
+            <li class="menu">
+                <h2 class="menu-title"> MAIN DISH </h2>
+                <ul class="menu-dropdown">
+                    <li><label><input type="radio" name="main_dish" value="pasta"><img src="images/pasta.jpeg" alt=""> Creamy White Sauce Pasta </label></li>
+                    <li><label><input type="radio" name="main_dish" value="pizza"><img src="images/good_bowl.jpeg" alt=""> Mughlai Good Bowl </label></li>
+                    <li><label><input type="radio" name="main_dish" value="burger"><img src="images/biryani.jpeg" alt=""> Chicken Tikka Biryani </label></li>
+                </ul>
+            </li>
+
+            <!-- Dessert Dropdown -->
+            <li class="menu">
+                <h2 class="menu-title"> DESSERT </h2>
+                <ul class="menu-dropdown">
+                    <li><label><input type="radio" name="dessert" value="brownie"><img src="images/brownie.jpeg" alt="Brownie"> Chocolate Brownie with Ice-Cream </label></li>
+                    <li><label><input type="radio" name="dessert" value="icecream"><img src="images/icecream.jpeg" alt="Ice Cream"> Scoop of Black Currant Ice Cream </label></li>
+                    <li><label><input type="radio" name="dessert" value="cake"><img src="images/jalebi.jpeg" alt="Jalebi"> Kashish ki Jalebi </label></li>
+                </ul>
+            </li>
+        </ul>
+        <input type="submit" value="Send to Your Rainberry 💌">
+    </form>
+    <div class = "buttons">
+        <button class="btn" id = "yesButton" onclick="nextPage()">Click here...Almost the End</button>
+    </div>
+    <script>
+        function nextPage() {
+                        window.location.href = "yes.html";
+                    }
+    </script>                
+</body>
+</html>

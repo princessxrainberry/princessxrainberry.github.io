@@ -1,0 +1,32 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150vh;
+    background: linear-gradient(to left, #fbcbf8, #ff99fc);
+  }
+  
+.header_text {
+    font-family: 'Apple Chancery';
+    font-size: 50px;
+    font-weight: bold;
+    color: rgb(89, 8, 175);
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+.header_text2 {
+    font-family: 'Apple Chancery';
+    font-size: 50px;
+    font-weight: bold;
+    color: rgb(173, 6, 37);
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+.gif_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

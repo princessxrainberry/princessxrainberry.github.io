@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For You ❤️</title>
+    <link rel="stylesheet" href="letter_style.css">
+</head>
+<body>
+
+    <div class="wrap animate pop">
+        <div class="overlay" onclick="showLetter()">
+            <div class="overlay-content animate slide-left delay-2">
+                <h1 class="animate slide-left pop delay-4">For My Love Bug</h1>
+                <p class="animate slide-left pop delay-5" style="color: white; margin-bottom: 2.5rem;">
+                    Click to reveal a small love letter for you... ❤️
+                </p>
+            </div>
+            <div class="image-content animate slide delay-5"></div>
+            <div class="dots animate">
+                <div class="dot animate slide-up delay-6"></div>
+                <div class="dot animate slide-up delay-7"></div>
+                <div class="dot animate slide-up delay-8"></div>
+            </div>
+        </div>
+
+        <div class="text" id="letter">
+            <p><img class="inset" src="images/us2.jpeg" alt=""/>  
+            My wonderful handsome man,  
+            <br><br>
+            When I first met you, I didn't know I will end up loving you this much. You make life not easy but definitely beautiful and vibrant. You say your smile makes you insecure but it's everything I ever wished for, the dopamine rush my heart gets and how it somersaults inside my ribcage whenever I see you smile is sooo fcking priceless. You are stuck with me for rest of your Valetine's Weeks sooo I must as well ask you. Will you be my Valentine? Please don't say no!!
+            I'm a miserable fool (in your words "stupid fuck") but I love you and I wanna love and adore you the same way every Valentine's Day, no matter the age or year or generation... 
+            <br><br>
+            Yours forever,  
+            <br> Kaashu ❤️
+            </p>
+            <div class="spotify-code">
+                <img src="images/spotifycode.jpeg" alt="Spotify Code" />
+            </div>
+        </div>
+    </div>
+    <div class = "buttons">
+        <button class="btn" id = "yesButton" onclick="nextPage()">Click Me...to customize you Date for 14th February 2025</button>
+    </div>
+
+    <script>
+        function nextPage() {
+                        window.location.href = "date_options.html";
+                    }
+        function showLetter() {
+            document.querySelector(".overlay").style.transform = "translateX(-60vmin)";
+            document.querySelector(".image-content").style.width = "30vmin";
+            document.querySelector(".overlay-content").style.border = "none";
+            document.querySelector(".overlay-content").style.transform = "translateX(60vmin)";
+            document.querySelector(".dots").style.transform = "translateX(1rem)";
+            document.querySelector(".text").style.opacity = "1";
+        }
+    </script>
+
+</body>
+</html>
